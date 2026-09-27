@@ -52,28 +52,31 @@ Dưới đây là cấu trúc định hướng và phân loại tài liệu đan
 
 ```
 tailieu.hycsc/
-├── 01_Fundamentals/          # Kiến thức nền tảng (OS, Network, Lý thuyết thông tin...)
+├── Co so va nen tang/        # Kiến thức nền tảng (OS, Network, Lý thuyết thông tin...)
 │   └── 774994253-Bai-Giang-Ly-Thuyet-Thong-Tin-Ptit.pdf
-├── 02_Web_Security/          # Lỗ hổng Web, OWASP Top 10, PortSwigger, Cheat sheets
-├── 03_Reverse_Engineering/   # Kỹ thuật dịch ngược, Disassembly, Assembly, Ghidra, IDA
-├── 04_Binary_Exploitation/   # Pwnable, Buffer Overflow, ROP, Memory Corruption
-├── 05_Cryptography/          # Mật mã học, Crypto algorithms, RSA, ECC, Hash
-├── 06_Digital_Forensics/     # Điều tra số, DFIR, Phân tích gói tin, Memory Dump
-├── 07_CTF_Writeups_Playbook/ # Bí kíp và lời giải các giải đấu CTF thực chiến
-└── 08_HUCE_Curriculum/       # Slide, bài giảng, đề thi & đề cương môn học tại HUCE
+├── CTF/                      # Tài liệu, writeups và bí kíp thi đấu CTF
+│   ├── AI/                   # Trí tuệ nhân tạo & AI Security
+│   ├── crypto/               # Mật mã học (Cryptography)
+│   ├── forensics/            # Điều tra số (Digital Forensics)
+│   ├── pwn/                  # Khai thác nhị phân (Binary Exploitation)
+│   ├── reverse engineering/  # Dịch ngược mã nguồn (Reverse Engineering)
+│   └── web exploitation/     # Lỗ hổng và khai thác ứng dụng Web (Web Security)
+└── Research/                 # Báo cáo, chuyên đề nghiên cứu khoa học & phân tích chuyên sâu
 ```
 
 ### 📋 Bảng phân loại chi tiết:
 
-| Chuyên Mục | Mô Tả & Nội Dung Tiêu Biểu | Trạng Thái |
-| :--- | :--- | :---: |
-| 🌐 **Cơ sở & Nền tảng** | Lý thuyết thông tin, Cấu trúc dữ liệu & Giải thuật, Mạng máy tính cơ bản | 🟢 Đang cập nhật |
-| 🛡️ **Web Security** | SQL Injection, XSS, CSRF, SSRF, IDOR, Authentication Bypass, JWT | 🟡 Thu thập |
-| 🧩 **Reverse & Pwn** | Hợp ngữ x86/x64, ELF/PE analysis, Format String, Stack/Heap Exploitation | 🟡 Thu thập |
-| 🔐 **Cryptography** | Hệ mật cổ điển, Mã hóa đối xứng & bất đối xứng, Crypto CTF | 🟡 Thu thập |
-| 🔍 **DFIR & Forensics** | Wireshark, Volatility, FTK Imager, File Carving, Log Analysis | 🟡 Thu thập |
-| 🚩 **CTF & Training** | Tổng hợp Writeup SV-ATTT, OverTheWire, HackTheBox, TryHackMe | 🟢 Đang cập nhật |
-| 🏛️ **Tài liệu HUCE** | Giáo trình, Slide giảng viên, Đề cương ôn tập & Thi học kỳ | 🟢 Đang cập nhật |
+| Chuyên Mục | Thư Mục | Mô Tả & Nội Dung Tiêu Biểu | Trạng Thái |
+| :--- | :--- | :--- | :---: |
+| 🌐 **Cơ sở & Nền tảng** | `Co so va nen tang/` | Lý thuyết thông tin, Cấu trúc dữ liệu & Giải thuật, Mạng máy tính cơ bản | 🟢 Đang cập nhật |
+| 🚩 **CTF** | `CTF/` | Bí kíp, writeup và kỹ thuật thực chiến phân theo từng mảng: | 🟢 Đang cập nhật |
+| ↳ 🤖 *AI* | `CTF/AI/` | Trí tuệ nhân tạo, Prompt Injection, Adversarial Attacks | 🟡 Đang cập nhật |
+| ↳ 🔐 *Crypto* | `CTF/crypto/` | Mật mã học, hệ mật cổ điển và hiện đại, giải thuật mã hóa | 🟡 Đang cập nhật |
+| ↳ 🔍 *Forensics* | `CTF/forensics/` | Điều tra số, Wireshark, Volatility, Memory & Disk Forensics | 🟡 Đang cập nhật |
+| ↳ 💥 *Pwn* | `CTF/pwn/` | Khai thác nhị phân, Buffer Overflow, ROP Chain, Format String | 🟡 Đang cập nhật |
+| ↳ 🧩 *Reverse Engineering* | `CTF/reverse engineering/` | Kỹ thuật dịch ngược, Disassembly, Assembly, Ghidra, IDA Pro | 🟡 Đang cập nhật |
+| ↳ 🛡️ *Web Exploitation* | `CTF/web exploitation/` | Khai thác ứng dụng Web, OWASP Top 10, PortSwigger, Cheat sheets | 🟡 Đang cập nhật |
+| 🔬 **Research** | `Research/` | Báo cáo, chuyên đề nghiên cứu khoa học, phân tích chuyên sâu ATTT | 🟡 Đang cập nhật |
 
 ---
 
@@ -122,7 +125,7 @@ Hãy thoải mái chia sẻ với cộng đồng qua các bước đơn giản s
 Mọi thắc mắc, giao lưu, góp ý hay muốn tham gia sinh hoạt cùng CLB, các bạn có thể liên hệ qua:
 
 * 🏢 **Đơn vị:** Câu lạc bộ An toàn thông tin - Trường Đại học Xây dựng Hà Nội (HUCE)
-* 📍 **Địa chỉ:** 55 Giải Phóng, Phường Đồng Tâm, Quận Hai Bà Trưng, Hà Nội
+* 📍 **Địa chỉ:** Phòng 410, toà Thí Nghiệm, 55 Giải Phóng, phường Bạch Mai, Hà Nội
 * 📧 **Email:** [hycsc4work@gmail.com](mailto:hycsc4work@gmail.com)
 * 🐙 **GitHub:** [github.com/hycscwork](https://github.com/hycscwork)
 
